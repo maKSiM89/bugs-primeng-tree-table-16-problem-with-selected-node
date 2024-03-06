@@ -7,20 +7,12 @@
   dataKey="id"
   compareSelectionBy="equals"
   [selectionMode]="'multiple'"
-  filterMode="strict"
-  #tt
 >
   <ng-template pTemplate="header">
     <tr>
       <th>
         <p-treeTableHeaderCheckbox></p-treeTableHeaderCheckbox>
         Name
-        <input
-          pInputText
-          type="text"
-          (input)="onFilter(tt, 'name')"
-          [(ngModel)]="filterValue"
-        />
       </th>
       <th>Size</th>
       <th>Type</th>
